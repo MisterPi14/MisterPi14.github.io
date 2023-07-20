@@ -1,0 +1,54 @@
+
+#Mapa-Contacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+#Mapa-Contacto iframe{
+    width: 600px;
+    height: 50vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#Tajeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ /*   justify-content: space-between;*/
+    color: white;
+    margin-top: 100px;
+    margin-right: 80px;
+}
+
+.Correo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.Correo div{
+    background-color: white;
+    border-radius: 3px;
+    width: 40px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.Correo a img{
+    width: 40px;
+}
+
+@media (max-width: 1067px){
+    #Mapa-Contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Mapa-Contacto iframe{
+        width: 75vw;
+        height: 50vh;
+    }
+}
