@@ -17,10 +17,12 @@ span{
 
 .Presentacion{
     background-color: rgb(255, 141, 158);
+    padding: 10px;
 }
 
 .mapa1{/*ancho=1.7 alto*/
    margin: 2%;
+   margin-left: 0;
    width: 42.5vw; 
    height: 25vw; 
    border: 0;
