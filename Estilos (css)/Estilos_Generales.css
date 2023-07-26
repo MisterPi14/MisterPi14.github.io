@@ -108,7 +108,7 @@ nav a{
     }
     #Barra-Navegacion{
         display: none;
-        background-color: blue;
+        background-color: whitesmoke;
     }
     #Barra-Navegacion{
         flex-direction: column;
