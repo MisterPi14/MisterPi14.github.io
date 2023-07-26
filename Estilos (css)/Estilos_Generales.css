@@ -7,14 +7,7 @@
 }
 
 a{
-    color: white;
     text-decoration: none;
-}
-
-.Letras_header
-{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
 }
 
 body
@@ -23,7 +16,6 @@ body
 }
 
 /*Estilos del encabezado*/
-
 header
 {
     width: 100vw;
@@ -31,19 +23,27 @@ header
     /*background-repeat: no-repeat;*/
     background-size:contain;
     padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
+    justify-content: space-between;
+}
+
+header div a
+{
+    color: rgb(0, 0, 0);
 }
 
 header h1
 {
-    font-size:45px;
+    font-size: 35px;
     font-family: 'Montserrat','monospace';
 }
 
-#Tarjeta_header{
-    margin-left: 10%;
+header #Logo{
+    /*margin-left: 10%;*/
     border-radius: 10px;
-    width: 350px;
+    width: 300px;
     height: 60px;
     background-color: rgb(233, 205, 49);
     display: flex;
@@ -51,7 +51,7 @@ header h1
     align-items: center;
 }
 
-#Llamar
+header #Llamar
 {
     width: 150px;
     border-radius: 10px;
@@ -60,7 +60,6 @@ header h1
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50%;
 }
 
 #Llamar img
@@ -97,6 +96,11 @@ header h1
     height: 40px;
 }
 
+nav a{
+    color: white;
+}
+
+
 /*Barra de navegacion mobil*/
 @media (max-width: 660px){
     #Boton-navegador{
@@ -117,36 +121,38 @@ header h1
 #Encabezado_redes
 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;/*36 a */
 
     background-color: rgb(255, 243, 230);
     width: 100%;
     height: 100px;
 }
+/*
+@media (max-width: 590px){
+    #Encabezado_redes{
+        padding: 15%;
+    }
+}*/
 
-#Redes_Lista
+#Encabezado_redes a
 {
+    color: black;
     display: flex;
-}
-
-.Iconos_Elemento
-{
-    display: flex;
-    margin-left: 150px;
-    transform: translateX(-75px);/*Con esto permitimos que quede centrado aun que le pusimos un margen de 150 a la izquierda de cada elemento, con esto se traslada a la mitad cada elemento y se ajusta por tanto*/
+    justify-content: center;
     align-items: center;
+    width: 270px;
 }
 
-.Iconos_Elemento img{
+#Encabezado_redes img{
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-.Iconos_Elemento h2
-{
-    font-family: 'Brush Script MT';
+#Encabezado_redes h2{
+    font-size: 22px;
 }
-
