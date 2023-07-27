@@ -1,15 +1,17 @@
 
-function AbrirNavegadorMobil(){
+function Abrir_Ocultar(Contenedor){
     var Boton = document.getElementById("Boton-navegador");
-    var Navegador = document.getElementById("Barra-Navegacion");
+    var Navegador = document.getElementById(Contenedor);
     var Display = window.getComputedStyle(Navegador).getPropertyValue('display');
 
     if(Display === "none"){
-        Boton.textContent = "Ocultar";
         Navegador.style.display = "block";
+        if(Contenedor === "Barra-Navegacion")
+        Boton.textContent = "Ocultar";
     }
     else{
-        Boton.textContent = "Mostrar";
         Navegador.style.display = "none";
+        if(Contenedor === "Barra-Navegacion")
+        Boton.textContent = "Mostrar";
     }
 }

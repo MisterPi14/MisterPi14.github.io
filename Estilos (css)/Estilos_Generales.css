@@ -36,7 +36,7 @@ header div a
 
 header h1
 {
-    font-size: 35px;
+    font-size: 33px;
     font-family: 'Montserrat','monospace';
 }
 
@@ -94,7 +94,7 @@ nav a{
     color: white;
 }
 
-#Boton-navegador{
+#Boton-navegador, #Boton-redes, #Encabezado_redes :nth-child(3){
     display: none;
 }
 
@@ -106,7 +106,8 @@ nav a{
         width: 100px;
         height: 30px;
         position: fixed;
-        right: 5px;
+        left: 5px;
+        margin-top: 5px;
     }
     #Barra-Navegacion{
         display: none;
@@ -142,12 +143,6 @@ nav a{
     width: 100%;
     height: 100px;
 }
-/*
-@media (max-width: 590px){
-    #Encabezado_redes{
-        padding: 15%;
-    }
-}*/
 
 #Encabezado_redes a
 {
@@ -167,4 +162,29 @@ nav a{
 
 #Encabezado_redes h2{
     font-size: 22px;
+}
+
+@media (max-width: 590px){
+    #Encabezado_redes{
+        display: none;
+        flex-direction: column;
+    }
+    #Encabezado_redes :nth-child(3){
+        display: flex;
+    }
+    header #Llamar{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    #Boton-redes{
+        display: block;
+        right: 5px;
+        bottom: 10vh;
+        width: 100px;
+        height: 30px;
+        position: fixed;
+        border-radius: 10px;
+    }
 }
