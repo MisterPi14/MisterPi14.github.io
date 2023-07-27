@@ -174,10 +174,12 @@ nav a{
         flex-direction: column;
         position: fixed;
         bottom: 12vh;
-        background-color: rgba(68, 47, 7, 0.644);
+        background-color: rgba(132, 194, 229, 0.9);
         width: 85vw;
         height: 26vh;
         right: 0;
+        border-radius: 10px;
+        right: 2vw;
     }
     #Encabezado_redes img{
         width: 40px;
@@ -198,6 +200,9 @@ nav a{
     }
     #Encabezado_redes :nth-child(3){
         display: flex;/*Aparecer logo whats*/
+    }
+    #Encabezado_redes :nth-child(3) img{
+        border-radius: 0%;/*Eliminar redondeado en whats*/
     }
     header #Llamar{/*Desaparecer whats de header*/
         display: none;
