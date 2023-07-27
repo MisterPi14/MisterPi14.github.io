@@ -5,7 +5,7 @@ function Abrir_Ocultar(Contenedor){
     var Display = window.getComputedStyle(Navegador).getPropertyValue('display');
 
     if(Display === "none"){
-        Navegador.style.display = "block";
+        Navegador.style.display = "flex";
         if(Contenedor === "Barra-Navegacion")
         Boton.textContent = "Ocultar";
     }

@@ -94,7 +94,7 @@ nav a{
     color: white;
 }
 
-#Boton-navegador, #Boton-redes, #Encabezado_redes :nth-child(3){
+#Boton-navegador, #Boton-redes, #Encabezado_redes :nth-child(3){/*Se ocultan los botones de navegacion y el logo de whats del footer*/
     display: none;
 }
 
@@ -103,19 +103,22 @@ nav a{
     #Boton-navegador{
         border-radius: 10px;
         display: block;
-        width: 100px;
-        height: 30px;
+        width: 60px;
+        height: 35px;
         position: fixed;
         left: 5px;
         margin-top: 5px;
     }
     #Barra-Navegacion{
         display: none;
+        flex-direction: column;
+        justify-content: left; 
         background-color: rgba(245, 245, 245, 0.6);
         position: fixed;
         width: 90%;
         left: 5%;
         height: 80%;
+        padding-top: 8vh;
     }
     #Barra-Navegacion div{
         background-color: rgb(187, 187, 187, 1);
@@ -123,9 +126,8 @@ nav a{
         border-color: rgb(141, 141, 141);
         color: black;
         width: 100%;
-
-        margin-top: 20px;
-        margin-bottom: 20px;
+        height: 5vh;
+        margin-bottom: 2vh;
     }
 }
 
@@ -151,6 +153,8 @@ nav a{
     justify-content: center;
     align-items: center;
     width: 270px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #Encabezado_redes img{
@@ -168,23 +172,37 @@ nav a{
     #Encabezado_redes{
         display: none;
         flex-direction: column;
+        position: fixed;
+        bottom: 12vh;
+        background-color: rgba(68, 47, 7, 0.644);
+        width: 85vw;
+        height: 26vh;
+        right: 0;
     }
-    #Encabezado_redes :nth-child(3){
-        display: flex;
+    #Encabezado_redes img{
+        width: 40px;
+        height: 40px;
     }
-    header #Llamar{
-        display: none;
-    }
-    header{
-        justify-content: center;
+    #Encabezado_redes h2{
+        font-size: 20px;
+        width: 180px;
     }
     #Boton-redes{
         display: block;
         right: 5px;
-        bottom: 10vh;
-        width: 100px;
-        height: 30px;
+        bottom: 5vh;
+        width: 40px;
+        height: 40px;
         position: fixed;
         border-radius: 10px;
+    }
+    #Encabezado_redes :nth-child(3){
+        display: flex;/*Aparecer logo whats*/
+    }
+    header #Llamar{/*Desaparecer whats de header*/
+        display: none;
+    }
+    header{
+        justify-content: center;
     }
 }
