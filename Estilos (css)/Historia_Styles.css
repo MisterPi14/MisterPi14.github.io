@@ -79,3 +79,8 @@ span{
 .colum-container{
     width: 57.5vw;
 }
+
+/* Estilos para la version mobil */
+@media (max-width: 590px){
+
+}

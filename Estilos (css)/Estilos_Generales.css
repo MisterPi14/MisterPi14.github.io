@@ -211,3 +211,8 @@ nav a{
         justify-content: center;
     }
 }
+
+/* Estilos para la version mobil */
+@media (max-width: 590px){
+
+}

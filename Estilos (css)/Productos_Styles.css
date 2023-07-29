@@ -60,3 +60,8 @@ p{
     border-radius: 10px;
 }
 
+/* Estilos para la version mobil */
+@media (max-width: 590px){
+
+}
+

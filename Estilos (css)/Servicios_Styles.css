@@ -103,3 +103,8 @@ button{
     display: flex; 
     justify-content: space-between;
 }
+
+/* Estilos para la version mobil */
+@media (max-width: 590px){
+
+}
