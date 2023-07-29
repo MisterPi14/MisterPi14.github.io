@@ -1,4 +1,6 @@
 
+p,ul{font-size: 20px;} h3{font-size: 25px;} h1{font-size: 21px;}
+
 .Principales-Acabados{
     padding-left: 5%;
     padding-right: 5%;
@@ -106,19 +108,42 @@ button{
 
 /* Estilos para la version mobil */
 @media (max-width: 590px){
+
+    p,ul{font-size: 1.5rem;} h3{font-size: 2rem;} h1{font-size: 1.7rem;}
+
     .Servicios-Principales, .Acabados{
         width: 100%;
-    }
+    }   
     .Principales-Acabados, .Botonadura{
         flex-direction: column;
     }
+    .Servicios-Principales{
+        position: relative;
+    }
+    .Carrusel-fotos{
+        margin-top: 2vh;
+    }
+    .Carrusel-fotos, #Pantalla-espera {
+        width: 70vw;
+        height: 40.5vw;
+    }
     .Botonadura{
+        position: absolute;
+        top: 35vh;
         display: grid;
-        grid-template-columns: 52% 52%;
+        grid-template-columns: 55% 55%;
         grid-template-rows: 40% 40% 40%; 
     }
     button{
         height: 30px;
         width: 35vw;
+    }
+    .Lista{
+        margin-top: 25vh;
+        flex-direction: column;
+    }
+
+    .Acabados{
+        margin-top: 30px;
     }
 }
