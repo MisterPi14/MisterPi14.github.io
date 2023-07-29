@@ -12,7 +12,7 @@
         <script src="../Codigos/Codigo_Servicios.js"></script>
         <script src="../Codigos/Codigo_General.js"></script>
 
-        <style>p,ul{font-size: 1.07vw;} h3{font-size: 1.4vw;} h1{font-size: 1vw;}</style>
+        <style>p,ul{font-size: 20px;} h3{font-size: 25px;} h1{font-size: 21px;}</style>
     </head>
     <body>       
         
@@ -25,7 +25,7 @@
             </div>
         </header>
         <!--Navegador para escritorio-->
-        <nav id="Barra-Navegacion">
+        <nav style="z-index: 1;" id="Barra-Navegacion">
             <a href="../Index.html"><div>Inicio</div></a>
             <a href="Productos.html"><div>Productos</div></a>
             <a href="Servicios.html"><div>Servicios</div></a>
@@ -33,42 +33,43 @@
             <a href="Historia.html"><div>¿Quienes Somos?</div></a>
         </nav>
         <!--Navegador para telefono-->
-        <button onclick="Abrir_Ocultar('Barra-Navegacion')" id="Boton-navegador">Mostrar</button>
+        <button style="z-index: 1;" onclick="Abrir_Ocultar('Barra-Navegacion')" id="Boton-navegador">Mostrar</button>
         <button onclick="Abrir_Ocultar('Encabezado_redes')" id="Boton-redes"> + </button>
         <!--////////////////////////////////////////////////////////////////////////////////////////////-->
-        
-        <section class="Servicios-Principales">
-            <h3>Servicios mas solicitados</h3>
-            <p>Fabricación y reparación de todo tipo de muebles (Todo tipo de estilos)</p>
-            <div class="Botonadura">
-                <button onclick="cambiarImagen(1)">Antiguos</button>
-                <button onclick="cambiarImagen(2)">Minimalistas</button>
-                <button onclick="cambiarImagen(3)">Modernos</button>
-                <button onclick="cambiarImagen(4)">Luis 15</button>
-                <button onclick="cambiarImagen(5)">Contemporáneos</button>
-                <button onclick="cambiarImagen(6)">Europeos</button>
-             </div>
-
-             <div class="Carrusel-fotos">
-                <div id="Pantalla-espera">
-                    <h3 style="font-size: 3vw;">Mimbre y Rattan</h3>
-                    <h2 style="font-size: 1.3vw; color: rgb(66, 66, 66);">🪑 &nbsp &nbsp Seleccione una coleccion de imagenes &nbsp &nbsp 🛋️</h2>
+        <section class="Principales-Acabados">
+            <article class="Servicios-Principales">
+                <h3>Servicios mas solicitados</h3>
+                <p>Fabricación y reparación de todo tipo de muebles (Todo tipo de estilos)</p>
+                <div class="Botonadura">
+                    <button onclick="cambiarImagen(1)">Antiguos</button>
+                    <button onclick="cambiarImagen(2)">Minimalistas</button>
+                    <button onclick="cambiarImagen(3)">Modernos</button>
+                    <button onclick="cambiarImagen(4)">Luis 15</button>
+                    <button onclick="cambiarImagen(5)">Contemporáneos</button>
+                    <button onclick="cambiarImagen(6)">Europeos</button>
+                 </div>
+    
+                 <div class="Carrusel-fotos">
+                    <div id="Pantalla-espera">
+                        <h3 style="font-size: 3vw;">Mimbre y Rattan</h3>
+                        <h2 style="font-size: 1.3vw; color: rgb(66, 66, 66);">🪑 &nbsp &nbsp Seleccione una coleccion de imagenes &nbsp &nbsp 🛋️</h2>
+                    </div>
+                     <ul>
+                        <li><img id="img1"></li>
+                        <li><img id="img2"></li>
+                        <li><img id="img3"></li>
+                        <li><img id="img4"></li>
+                    </ul>
                 </div>
-                 <ul>
-                    <li><img id="img1"></li>
-                    <li><img id="img2"></li>
-                    <li><img id="img3"></li>
-                    <li><img id="img4"></li>
-                </ul>
-            </div>
-            <ul class="Lista">
-                <li>Barnizado</li>
-                <li>Tapicería</li>
-                <!--Recubir sus muebles con nuestras telas de alta calidad, optimas para intemperie (sol y la lluvia). Disponibles en diversos tonos de color y estampados Listos para mejorar la calidad de sus muebles-->
-                <li>Servicios de carpintería</li>
-            </ul> 
-
-            <section class="Acabados">
+                <ul class="Lista">
+                    <li>Barnizado</li>
+                    <li>Tapicería</li>
+                    <!--Recubir sus muebles con nuestras telas de alta calidad, optimas para intemperie (sol y la lluvia). Disponibles en diversos tonos de color y estampados Listos para mejorar la calidad de sus muebles-->
+                    <li>Servicios de carpintería</li>
+                </ul> 
+            </article>
+    
+            <article class="Acabados">
                 <h3>Acabados en madera para todo tipo de muebles</h3>
                 <h1><br>Entintados</h1>
                 <p>Aplicación de una gama amplia de tintes en la madera</p>
@@ -78,10 +79,10 @@
                 <p>Consiste en realizar un rallado en la madera con fines decorativos y simular la veta natural de la madera.</p>
                 <h1><br>Natural</h1>
                 <p>Es una técnica muy valorada por los amantes de la madera. Consiste en dejar la madera en su estado natural con el fin de resaltar las características de la misma: vetas, manchas o sus anillos de crecimiento.</p>
-            </section>
+            </article>
         </section>
 
-        <section class="Servicios-Secundarios">
+        <article class="Servicios-Secundarios">
             <h3 style="text-align: center;">Otros servicios</h3>
             <p>
                 Creación de cocinas integrales 
@@ -90,9 +91,7 @@
                 
                 Nota final: Nos puede enviar su diseño o le enviamos un catálogo damos presupuesto
             </p>
-        </section>
-
-
+        </article>
 
         <!--//////////////////////////////////  Redes sociales   ///////////////////////////////////////-->
         <footer id="Encabezado_redes">
