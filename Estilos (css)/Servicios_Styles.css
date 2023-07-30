@@ -50,6 +50,13 @@ button{
 }
 
 /* Estilos de el carrusel de imagenes*/
+#Pantalla-espera h3{
+    font-size: 3vw;
+}
+#Pantalla-espera h2{
+    font-size: 1.3vw; 
+    color: rgb(66, 66, 66);
+}
 .Carrusel-fotos, #Pantalla-espera {
     width: 38vw;
     height: 22vw;
@@ -126,6 +133,13 @@ button{
     .Carrusel-fotos, #Pantalla-espera {
         width: 70vw;
         height: 40.5vw;
+    }
+    #Pantalla-espera h3{
+        font-size: 8vw;
+    }
+    #Pantalla-espera h2{
+        font-size: 3vw; 
+        color: rgb(66, 66, 66);
     }
     .Botonadura{
         position: absolute;
