@@ -22,6 +22,14 @@ p,ul{font-size: 20px;} h3{font-size: 25px;} h1{font-size: 21px;}
     align-items: center;
 }
 
+.Galeria-Botones{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Botonadura{
     display: flex;
     justify-content: space-between;
@@ -125,7 +133,7 @@ button{
         flex-direction: column;
     }
     .Servicios-Principales{
-        position: relative;
+       /* position: relative;*/
     }
     .Carrusel-fotos{
         margin-top: 2vh;
@@ -138,12 +146,15 @@ button{
         font-size: 2.3rem;
     }
     #Pantalla-espera h2{
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
         color: rgb(66, 66, 66);
     }
+    .Galeria-Botones{
+        flex-direction: column-reverse;
+    }
     .Botonadura{
-        position: absolute;
-        top: 35vh;
+        /*position: absolute;
+        top: 35vh;*/
         display: grid;
         grid-template-columns: 55% 55%;
         grid-template-rows: 40% 40% 40%; 
