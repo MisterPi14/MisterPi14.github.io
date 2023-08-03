@@ -132,9 +132,6 @@ button{
     .Principales-Acabados, .Botonadura{
         flex-direction: column;
     }
-    .Servicios-Principales{
-       /* position: relative;*/
-    }
     .Carrusel-fotos{
         margin-top: 2vh;
     }
