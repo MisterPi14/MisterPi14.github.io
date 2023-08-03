@@ -109,6 +109,11 @@ nav a{
 
 /*Barra de navegacion mobil*/
 @media (max-width: 590px){
+    header h1/*Logo*/
+    {
+        font-size: 25px;
+        font-family: 'Montserrat','monospace';
+    }
     #Boton-navegador{
         border-radius: 10px;
         display: block;
