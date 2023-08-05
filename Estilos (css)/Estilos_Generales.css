@@ -76,7 +76,9 @@ header #Llamar
     width: 25px;
     height: 25px;
 }
-
+.Divicion{
+    display: none;
+}
 /*Barra de navegacion de escritorio*/
 #Barra-Navegacion{
     width: 100vw;
@@ -109,6 +111,12 @@ nav a{
 
 /*Barra de navegacion mobil*/
 @media (max-width: 590px){
+    .Divicion{
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(37, 37, 37);
+    }
     header h1/*Logo*/
     {
         font-size: 25px;

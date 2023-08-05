@@ -2,10 +2,19 @@
 p {
     color: rgb(0, 0, 0);
     font-family:  'Calibri','Bradley hand ITC';
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 2.6rem;
 }
 
 span{
     color: rgb(231, 225, 210);
+}
+
+ul li{
+    font-size: 2.2rem;
 }
 
 .quienesSomos{
@@ -20,16 +29,31 @@ span{
     padding: 10px;
 }
 
-.mapa1{/*ancho=1.7 alto*/
+.Tarjeta{/*ancho=1.7 alto*/
    margin: 2%;
    margin-left: 0;
    width: 42.5vw; 
    height: 25vw; 
-   border: 0;
+   border: 1px;
+   border-style:solid;
+   border-radius: 10px;
+   background-color: rgb(255, 226, 152);
+   display: flex;
+   justify-content: space-between;
    /*position: relative;
    right: 500px;*/
 }
-.Mapa-Comentario{
+.Tarjeta img{
+    width: 45%;
+    height: 100%;
+}
+
+.Tarjeta h1{
+    font-size: 2.5vw;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.Tarjeta-Comentario{
     display: flex;
     flex-direction: row-reverse;
 }
@@ -82,5 +106,19 @@ span{
 
 /* Estilos para la version mobil */
 @media (max-width: 590px){
-
+    p {
+        font-size: 1.5rem;
+    }
+    ul li{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .Tarjeta-Comentario{
+        flex-direction: column;
+    }
+    .colum-container{
+        width: 100%;
+    }
 }
