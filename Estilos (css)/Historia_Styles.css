@@ -62,26 +62,25 @@ ul li{
     border-radius: 5px;
     margin: 2%;
     padding: 10px;
-    /*width: 50%;
-    height: 10%;*/
-   /* position: absolute;
-    left: 600px;*/
 }
-.Comentario :nth-child(3){
-    position: relative;
-    margin-left: 70%;
+.Comentario :nth-child(3){/*Comentario de Ezequiel*/
+    float: right;
 }
 
-.Imagenes-container img{
+.Imagenes-Pc img{
     width: 22%;
     height: 100%;
     margin: 1%;
     border-radius: 10px;
 }
 
-.Imagenes-container{
+.Imagenes-Pc{
     width: 100%;
     height: 45%;
+}
+
+.Imagenes-Cel{
+    display: none;
 }
 
 .Experiencias{
@@ -120,5 +119,21 @@ ul li{
     }
     .colum-container{
         width: 100%;
+    }
+
+    /*Imagenes*/
+    .Imagenes-Cel img{
+        width: 22%;
+        height: 100%;
+        margin: 1%;
+        border-radius: 10px;
+    }
+    .Imagenes-Cel{
+        display: block;
+        width: 100%;
+        height: 45%;
+    }
+    .Imagenes-Pc{
+        display: none;
     }
 }
