@@ -130,6 +130,7 @@ nav a{
         position: fixed;
         left: 5px;
         margin-top: 5px;
+        z-index: 1;
     }
     #Barra-Navegacion{
         display: none;
@@ -141,6 +142,7 @@ nav a{
         left: 5%;
         height: 80%;
         padding-top: 8vh;
+        z-index: 1;
     }
     #Barra-Navegacion div{
         background-color: rgb(187, 187, 187, 1);
@@ -202,6 +204,7 @@ nav a{
         right: 0;
         border-radius: 10px;
         right: 2vw;
+        z-index: 1;
     }
     #Encabezado_redes img{
         width: 40px;
