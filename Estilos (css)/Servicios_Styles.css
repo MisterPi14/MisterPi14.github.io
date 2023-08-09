@@ -55,6 +55,7 @@ button{
     margin-right: 5%;
     margin-bottom: 30px;
     background-color: blueviolet;
+    padding-left: 50px;
 }
 
 /* Estilos de el carrusel de imagenes*/
@@ -129,6 +130,9 @@ button{
     .Servicios-Principales, .Acabados{
         width: 100%;
     }   
+    .Servicios-Secundarios{
+        padding-left: 20px;
+    }
     .Principales-Acabados, .Botonadura{
         flex-direction: column;
     }
