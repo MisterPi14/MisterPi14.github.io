@@ -1,32 +1,47 @@
 
-#Mapa-Contacto{
-    display: flex;
-    justify-content: space-around;
-}
-
-#Mapa-Contacto iframe{
-    width: 600px;
-    height: 50vh;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#Tajeta{
+.Main-container{
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
- /*   justify-content: space-between;*/
-    color: white;
-    margin-top: 100px;
-    margin-right: 80px;
+}
+
+.Mapa-Direccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mapa-Direccion iframe{
+    width: 600px;
+    height: 400px;
+    margin-right: 10vw;
+}
+
+.Tajeta-Contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.Tajeta-Contacto p{
+    font-size: 2rem;
+}
+
+.Tajeta-Contacto a{
+    font-size: 1.5rem;
 }
 
 .Correo{
     display: flex;
     flex-direction: row;
     margin-top: 25px;
+    justify-content: center;
+    align-items: center;
 }
-
 .Correo div{
     background-color: white;
     border-radius: 3px;
@@ -37,24 +52,79 @@
     align-items: center;
     margin-right: 10px;
 }
+.Correo a{
+    color: white;
+}
 .Correo a img{
     width: 40px;
 }
+/*Estilos de la tabla*/
+.Horario{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.Horario p{
+    display: none;
+    color: rgb(235, 214, 161);
+}
+table {
+    width: 700px;
+    border-spacing: 5px; 
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center; 
+    background-color: #ececec;
 
+}
+th {
+    background-color: #aca6a6;
+}
 /*VERIFICAR ESTO*/
-@media (max-width: 1067px){
-    #Mapa-Contacto{
-        display: flex;
+@media (max-width: 819px){
+    .Mapa-Direccion{
         flex-direction: column;
         align-items: center;
     }
-    #Mapa-Contacto iframe{
-        width: 75vw;
-        height: 50vh;
+    .Mapa-Direccion iframe{
+        width: 500px;
+        height: 333px;
+        margin-right: 0;
+        margin-bottom: 50px;
     }
 }
 
 /* Estilos para la version mobil */
 @media (max-width: 590px){
+    .Mapa-Direccion iframe{
+        width: 90vw;
+        height: 60vw;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 
+    .Tajeta-Contacto p{
+        font-size: 1.7rem;
+    }
+    
+    .Tajeta-Contacto a{
+        font-size: 1.2rem;
+    }
+    .Horario table{
+        display: none;
+    }
+
+    .Horario p{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px){
+    .Horario p{font-size: 1.7rem;}
 }
