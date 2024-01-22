@@ -47,34 +47,68 @@
 }
 
 /*//////////////////////////Reseñas de la pagina////////////////////*/
+.Reseñas-titulo{
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Reseñas-titulo-container{
+  height: 50px;
+  width: 60vw;
+  background-color: rgb(233, 222, 67);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Reseñas-titulo-container p{
+  font-size: 2.1rem;
+  margin: 10px;
+}
 
 .Reseñas{
-  margin-top: 50px;
+  margin-top: 25px;
   background-color: rgb(170, 169, 169);
   display: flex;
   justify-content: center;
 }
 
-.Reseñas-container{
+#Reseñas-container{
   background-color: rgb(32, 33, 36);
   width: 70vw;
   display: flex;
   flex-direction: column;
 }
 
-
-.Reseñas-container aside{
+#Reseñas-container div{
   margin: 25px;
   padding: 25px;
   border-radius: 10px;
   background-color: orange
 }
 
-.Reseñas-container :nth-of-type(2n+1){
+#Reseñas-container div p{
+  width: 100%;
+}
+
+#Reseñas-container div .nombre-usuario{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#Reseñas-container div .fecha-publicacion{
+  font-weight: bold;
+  text-align: right
+}
+
+#Reseñas-container > :nth-child(2n+1){
   margin-right: 50%;
 }
 
-.Reseñas-container :nth-of-type(2n){
+#Reseñas-container > :nth-child(2n){
   margin-left: 50%;
 }
 
@@ -88,8 +122,17 @@
   .Reseñas-container{
     width: 95%;
   }
-  .Reseñas-container :nth-of-type(n){
+  #Reseñas-container > :nth-child(n){
     margin: 10px;
     margin-top: 20px;
+  }
+  .Reseñas-titulo-container{
+    width: 90vw;
+  }
+  .Reseñas-titulo-container p{
+    font-size: 1.8rem;
+  }
+  #Reseñas-container{
+    width: 85vw;
   }
 }
